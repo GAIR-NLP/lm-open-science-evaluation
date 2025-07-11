@@ -1,0 +1,68 @@
+{
+    "ChemBench-multi-choise-cot": {
+        "test_path": "datasets/chemistry/chembench/chemistry_multi_choise.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_ChemBench_multi_choise",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "ChemBenchMultiChoise"
+    },
+    "ChemBench-str-match-cot": {
+        "test_path": "datasets/chemistry/chembench/chemistry_str_match.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_ChemBench_str_match",
+        "answer_extraction_fn": "extract_math_few_shot_cot_answer",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "ChemBenchStrMatch"
+    },
+    "GPQA-Chemistry-cot": {
+        "test_path": "datasets/chemistry/gpqa_chemistry/gpqa_chemistry.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_gpqa",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "GPQAPrompt"
+    },
+    "mmlu-college-chemistry":{
+        "test_path": "datasets/chemistry/mmlu/mmlu_college_chemistry.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUCollegeChemistry"
+    },
+    "mmlu-high-school-chemistry":{
+        "test_path": "datasets/chemistry/mmlu/mmlu_high_school_chemistry.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUHighSchoolChemistry"
+    },
+    "Super_GPQA-Chemistry-cot": {
+        "test_path": "datasets/chemistry/super_gpqa/super_gpqa_chemistry.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    }
+}

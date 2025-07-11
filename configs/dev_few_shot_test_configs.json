@@ -1,0 +1,167 @@
+{
+    "gsm8k-cot": {
+        "test_path": "datasets/gsm8k/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_gsm8k_test",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTGSMPrompt"
+    },
+    "gsm8k-pal": {
+        "test_path": "datasets/gsm8k/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "pal"
+        ],
+        "process_fn": "process_gsm8k_test",
+        "answer_extraction_fn": "placeholder",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "PALGSMPrompt"
+    },
+    "math-cot": {
+        "test_path": "datasets/math/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_math_test",
+        "answer_extraction_fn": "extract_math_few_shot_cot_answer",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "MinervaMathPrompt"
+    },
+    "math-pal": {
+        "test_path": "datasets/math/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "pal"
+        ],
+        "process_fn": "process_math_test",
+        "answer_extraction_fn": "placeholder",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "PALMathPrompt"
+    },
+    "math_sat-cot": {
+        "test_path": "datasets/sat/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_math_sat",
+        "answer_extraction_fn": "extract_sat_few_shot_answer",
+        "eval_fn": "eval_math_sat",
+        "few_shot_prompt": "CoTSATPrompt"
+    },
+    "ocw-courses-cot": {
+        "test_path": "datasets/ocw/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_ocwcourses",
+        "answer_extraction_fn": "extract_ocwcourses_few_shot_answer",
+        "eval_fn": "eval_ocwcourses",
+        "few_shot_prompt": "OCWCoursesPrompt"
+    },
+    "mmlu-stem-cot": {
+        "test_path": "datasets/mmlu_stem/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu_stem",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUSTEMPrompt"
+    },
+    "mathqa-cot": {
+        "test_path": "datasets/mathqa/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mathqa",
+        "answer_extraction_fn": "extract_mathqa_few_shot_answer",
+        "eval_fn": "eval_mathqa",
+        "few_shot_prompt": "CoTMathQAPrompt"
+    },
+    "svamp-cot": {
+        "test_path": "datasets/svamp/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_svamp",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTGSMPrompt"
+    },
+    "svamp-pal": {
+        "test_path": "datasets/svamp/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "pal"
+        ],
+        "process_fn": "process_svamp",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "PALGSMPrompt"
+    },
+    "tabmwp-cot": {
+        "test_path": "datasets/tabmwp/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_tabmwp",
+        "answer_extraction_fn": "extract_tabmwp_few_shot_answer",
+        "eval_fn": "eval_tabmwp",
+        "few_shot_prompt": "CoTGSMPrompt"
+    },
+    "asdiv-cot": {
+        "test_path": "datasets/asdiv/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_asdiv",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTGSMPrompt"
+    },
+    "asdiv-pal": {
+        "test_path": "datasets/asdiv/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "pal"
+        ],
+        "process_fn": "process_asdiv",
+        "answer_extraction_fn": "placeholder",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "PALGSMPrompt"
+    },
+    "mawps-cot": {
+        "test_path": "datasets/mawps/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mawps",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTGSMPrompt"
+    },
+    "mawps-pal": {
+        "test_path": "datasets/mawps/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "pal"
+        ],
+        "process_fn": "process_mawps",
+        "answer_extraction_fn": "placeholder",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "PALGSMPrompt"
+    }
+}

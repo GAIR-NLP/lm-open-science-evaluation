@@ -1,0 +1,112 @@
+{
+    "NEWTON-confident-questions-cot": {
+        "test_path": "datasets/physics/NEWTON/newton_confident_questions.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_newton_confident_questions",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "NEWTONConfidentQuestions"
+    },
+    "NEWTON-explicit-questions-cot": {
+        "test_path": "datasets/physics/NEWTON/newton_explicit_questions.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_newton_explicit_questions",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "NEWTONExplicitQuestions"
+    },
+    "NEWTON-implicit-questions-cot": {
+        "test_path": "datasets/physics/NEWTON/newton_implicit_questions.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_newton_implicit_questions",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "NEWTONImplicitQuestions"
+    },
+    "piqa-cot": {
+        "test_path": "datasets/physics/piqa/piqa_valid.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_piqa",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "PIQA"
+    },
+    "scibench-physics-cot":{
+        "test_path": "datasets/physics/scibench_physics/scibench_physics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_scibench",
+        "answer_extraction_fn": "extract_math_few_shot_cot_answer",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "SciBench"
+    },
+    "GPQA-Physics-cot": {
+        "test_path": "datasets/physics/gpqa_physics/gpqa_physics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_gpqa",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "GPQAPrompt"
+    },
+    "mmlu-high-school-physics-cot":{
+        "test_path": "datasets/physics/mmlu_physics/mmlu_high_school_physics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUHighSchoolPhysics"
+    },
+    "mmlu-college-physics-cot":{
+        "test_path": "datasets/physics/mmlu_physics/mmlu_college_physics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUCollegePhysics"
+    },
+    "mmlu-conceptual-physics-cot":{
+        "test_path": "datasets/physics/mmlu_physics/mmlu_conceptual_physics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUConceptualPhysics"
+    },
+    "Super_GPQA-Physics-cot": {
+        "test_path": "datasets/physics/super_gpqa/super_gpqa_physics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPromptLong"
+    }
+}

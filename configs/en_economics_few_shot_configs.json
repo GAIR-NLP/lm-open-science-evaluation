@@ -1,0 +1,35 @@
+{
+    "mmlu-econometrics-cot":{
+        "test_path": "datasets/economics/mmlu/mmlu_econometrics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUEconometrics"
+    },
+    "mmlu-high-school-macroeconomics-cot":{
+        "test_path": "datasets/economics/mmlu/mmlu_high_school_macroeconomics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUHighSchoolMacroeconomics"
+    },
+    "mmlu-high-school-microeconomics-cot":{
+        "test_path": "datasets/economics/mmlu/mmlu_high_school_microeconomics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUHighSchoolMicroeconomics"
+    }
+}

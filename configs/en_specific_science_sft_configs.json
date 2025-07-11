@@ -1,0 +1,167 @@
+{
+    "ChemBench-multi-choise": {
+        "test_path": "datasets/chemistry/chembench/chemistry_multi_choise.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_ChemBench_multi_choise_sft",
+        "answer_extraction_fn": "extract_adaptive_mc_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTSuperGPQAPrompt"
+    },
+    "ChemBench-str-match": {
+        "test_path": "datasets/chemistry/chembench/chemistry_str_match.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_ChemBench_str_match",
+        "answer_extraction_fn": "extract_math_few_shot_cot_answer",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "SFTMATH0ShotPrompt"
+    },
+    "cs-bench-assertion-questions": {
+        "test_path": "datasets/computer_science/cs_bench/cs_bench_assertion.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_cs_bench_assertion_sft",
+        "answer_extraction_fn": "extract_two_choice_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTCSBenchAssertionPrompt"
+    },
+    "cs-bench-multiple-choice-questions":{
+        "test_path": "datasets/computer_science/cs_bench/cs_bench_multiple_choice.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_cs_bench_multiple_choice_sft",
+        "answer_extraction_fn": "extract_mmlu_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTMMLUPrompt"
+    },
+    "medqa-us": {
+        "test_path": "datasets/medicine/medqa_US/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_medqa_sft",
+        "answer_extraction_fn": "extract_five_choice_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTMedQAPrompt"
+    },
+    "medmcqa": {
+        "test_path": "datasets/medicine/medmcqa/medmcqa.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_medmcqa_sft",
+        "answer_extraction_fn": "extract_mmlu_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTMMLUPrompt"
+    },
+    "PubMedQA":{
+        "test_path": "datasets/medicine/pubmedqa/testset.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_pubmedqa_sft",
+        "answer_extraction_fn": "extract_three_choice_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTPubmedQAPrompt"
+    },
+    "NEWTON-confident-questions": {
+        "test_path": "datasets/physics/NEWTON/newton_confident_questions.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_newton_confident_questions_sft",
+        "answer_extraction_fn": "extract_three_choice_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTNEWTONConfidentQuestionsPrompt"
+    },
+    "NEWTON-explicit-questions-bool": {
+        "test_path": "datasets/physics/NEWTON/newton_explicit_questions_bool.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_newton_explicit_questions_bool_sft",
+        "answer_extraction_fn": "extract_two_choice_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTCSBenchAssertionPrompt"
+    },
+    "NEWTON-explicit-questions-mc": {
+        "test_path": "datasets/physics/NEWTON/newton_explicit_questions_mc.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_newton_explicit_questions_mc_sft",
+        "answer_extraction_fn": "extract_mmlu_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTMMLUPrompt"
+    },
+    "NEWTON-implicit-questions": {
+        "test_path": "datasets/physics/NEWTON/newton_implicit_questions.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_newton_implicit_questions_sft",
+        "answer_extraction_fn": "extract_mmlu_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTMMLUPrompt"
+    },
+    "piqa": {
+        "test_path": "datasets/physics/piqa/piqa_valid.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_piqa_sft",
+        "answer_extraction_fn": "extract_two_choice_sft_answer",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SFTCSBenchAssertionPrompt"
+    },
+    "scibench-physics":{
+        "test_path": "datasets/physics/scibench_physics/scibench_physics.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_scibench_sft",
+        "answer_extraction_fn": "extract_scibench_sft_answer",
+        "eval_fn": "eval_scibench",
+        "few_shot_prompt": "SFTScibenchPrompt"
+    },
+    "scibench-chemistry":{
+        "test_path": "datasets/chemistry/scibench_chemistry/scibench_chemistry.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_scibench_sft",
+        "answer_extraction_fn": "extract_scibench_sft_answer",
+        "eval_fn": "eval_scibench",
+        "few_shot_prompt": "SFTScibenchPrompt"
+    },
+    "scibench-math":{
+        "test_path": "datasets/scibench/scibench_math.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_scibench_sft",
+        "answer_extraction_fn": "extract_scibench_sft_answer",
+        "eval_fn": "eval_scibench",
+        "few_shot_prompt": "SFTScibenchPrompt"
+    }
+}

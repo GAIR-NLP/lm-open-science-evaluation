@@ -1,0 +1,156 @@
+{
+    "gpqa-genetics-cot": {
+        "test_path": "datasets/medicine/gpqa_Genetics/gpqa_Genetics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_gpqa",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "GPQAPrompt"
+    },
+    "gpqa-molecular-biology-cot": {
+        "test_path": "datasets/medicine/gpqa_Molecular_Biology/gpqa_Molecular_Biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_gpqa",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "GPQAPrompt"
+    },
+    "medqa-us-cot": {
+        "test_path": "datasets/medicine/medqa_US/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_medqa",
+        "answer_extraction_fn": "extract_medqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MEDQAPrompt"
+    },
+    "medmcqa-cot": {
+        "test_path": "datasets/medicine/medmcqa/medmcqa.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_medmcqa",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MEDMCQAPrompt"
+    },
+    "PubMedQA-cot":{
+        "test_path": "datasets/medicine/pubmedqa/testset.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_pubmedqa",
+        "answer_extraction_fn": "extract_pubmedqa",
+        "eval_fn": "eval_pubmedqa",
+        "few_shot_prompt": "PubMedQAPrompt"
+    },
+    "mmlu-anatomy":{
+        "test_path": "datasets/medicine/mmlu_anatomy/mmlu_anatomy.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUAnatomy"
+    },
+    "mmlu-clinical-knowledge":{
+        "test_path": "datasets/medicine/mmlu_clinical_knowledge/mmlu_clinical_knowledge.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUClinicalKnowledge"
+    },
+    "mmlu-college-biology":{
+        "test_path": "datasets/medicine/mmlu_college_biology/mmlu_college_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUCollegeBiology"
+    },
+    "mmlu-college-medicine":{
+        "test_path": "datasets/medicine/mmlu_college_medicine/mmlu_college_medicine.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUCollegeMedicine"
+    },
+    "mmlu-high-school-biology":{
+        "test_path": "datasets/medicine/mmlu_high_school_biology/mmlu_high_school_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUHighSchoolBiology"
+    },
+    "mmlu-medical-genetics":{
+        "test_path": "datasets/medicine/mmlu_medical_genetics/mmlu_medical_genetics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUMedicalGenetics"
+    },
+    "mmlu-professional-medicine":{
+        "test_path": "datasets/medicine/mmlu_professional_medicine/mmlu_professional_medicine.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUProfessionalMedicine"
+    },
+    "Super_GPQA-Medicine-cot": {
+        "test_path": "datasets/medicine/super_gpqa/super_gpqa_medicine.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    },
+    "Super_GPQA-Biology-cot": {
+        "test_path": "datasets/medicine/super_gpqa/super_gpqa_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    }
+}

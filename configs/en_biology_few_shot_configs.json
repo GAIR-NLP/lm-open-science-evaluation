@@ -1,0 +1,46 @@
+{
+    "gpqa-biology-cot": {
+        "test_path": "datasets/biology/GPQA_biology/gpqa_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_gpqa",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "GPQAPrompt"
+    },
+    "mmlu-college-biology":{
+        "test_path": "datasets/biology/mmlu_college_biology/mmlu_college_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUCollegeBiology"
+    },
+    "mmlu-high-school-biology":{
+        "test_path": "datasets/biology/mmlu_high_school_biology/mmlu_high_school_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUHighSchoolBiology"
+    },
+    "Super_GPQA-Biology-cot": {
+        "test_path": "datasets/medicine/super_gpqa/super_gpqa_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    }
+}

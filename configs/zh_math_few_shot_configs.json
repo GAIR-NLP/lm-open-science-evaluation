@@ -1,0 +1,73 @@
+{
+    "cmath-cot-test": {
+        "test_path": "datasets/cmath/test.jsonl",
+        "language": "zh",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_cmath",
+        "answer_extraction_fn": "extract_cmath_few_shot_test",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTCMATHPrompt"
+    },
+    "agieval-gaokao-mathcloze-cot-test": {
+        "test_path": "datasets/agieval/gaokao-mathcloze.jsonl",
+        "language": "zh",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_agieval_gaokao_math_cloze",
+        "answer_extraction_fn": "extract_agieval_gaokao_mathcloze_few_shot_cot_test",
+        "eval_fn": "eval_agieval_gaokao_math_cloze",
+        "few_shot_prompt": "CoTGaoKaoMathClozePrompt"
+    },
+    "agieval-gaokao-mathqa-cot-test": {
+        "test_path": "datasets/agieval/gaokao-mathqa.jsonl",
+        "language": "zh",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_agieval_gaokao_mathqa_few_shot_cot_test",
+        "answer_extraction_fn": "extract_agieval_gaokao_mathqa_few_shot_cot_test",
+        "eval_fn": "eval_agieval_gaokao_mathqa",
+        "few_shot_prompt": "CoTGaoKaoMathQAPrompt"
+    },
+    "mgsm-zh": {
+        "test_path": "datasets/mgsm_zh/mgsm_zh.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_mgsm_zh",
+        "answer_extraction_fn": "extract_last_single_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTMGSMZHPrompt"
+    },
+    "cmath-cot-test-4shot": {
+        "test_path": "datasets/cmath/test.jsonl",
+        "language": "zh",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_cmath",
+        "answer_extraction_fn": "extract_cmath_few_shot_test",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTCMATHPrompt4Shot"
+    },
+    "mgsm-zh-4shot": {
+        "test_path": "datasets/mgsm_zh/mgsm_zh.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_mgsm_zh",
+        "answer_extraction_fn": "extract_last_single_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTMGSMZHPrompt4Shot"
+    },
+    "mmmlu-zh-math": {
+        "test_path": "datasets/mmmlu/mmmlu_zh_math_test.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_mmmlu_zh_math",
+        "answer_extraction_fn": "extract_mmmlu_zh_math",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMMLUZHMathPrompt"
+    }
+}

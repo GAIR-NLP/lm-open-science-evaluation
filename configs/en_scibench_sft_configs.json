@@ -1,0 +1,35 @@
+{
+    "scibench-physics":{
+        "test_path": "datasets/physics/scibench_physics/scibench_physics.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_scibench_sft",
+        "answer_extraction_fn": "extract_scibench_sft_answer",
+        "eval_fn": "eval_scibench",
+        "few_shot_prompt": "SFTScibenchPrompt"
+    },
+    "scibench-chemistry":{
+        "test_path": "datasets/chemistry/scibench_chemistry/scibench_chemistry.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_scibench_sft",
+        "answer_extraction_fn": "extract_scibench_sft_answer",
+        "eval_fn": "eval_scibench",
+        "few_shot_prompt": "SFTScibenchPrompt"
+    },
+    "scibench-math":{
+        "test_path": "datasets/scibench/scibench_math.json",
+        "language": "en",
+        "tasks": [
+            "sft"
+        ],
+        "process_fn": "process_scibench_sft",
+        "answer_extraction_fn": "extract_scibench_sft_answer",
+        "eval_fn": "eval_scibench",
+        "few_shot_prompt": "SFTScibenchPrompt"
+    }
+}

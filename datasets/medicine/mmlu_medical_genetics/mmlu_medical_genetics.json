@@ -1,0 +1,1102 @@
+[
+    {
+        "question": "In a Robertsonian translocation fusion occurs at the:",
+        "subject": "medical_genetics",
+        "choices": [
+            "telomeres.",
+            "centromeres.",
+            "histones.",
+            "ends of the long arms."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Zinc finger proteins and helix-turn-helix proteins are",
+        "subject": "medical_genetics",
+        "choices": [
+            "types of DNA-binding proteins",
+            "involved in the control of translation",
+            "components of ribosomes",
+            "part of the hemoglobin in blood cells"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "If the frequency of males affected with an X-linked recessive condition in a human population is .10 (one in ten), what will be the expected frequency of affected females?",
+        "subject": "medical_genetics",
+        "choices": [
+            "0.01",
+            "0.001",
+            "0.02",
+            "0.0001"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In DNA adenine normally pairs with:",
+        "subject": "medical_genetics",
+        "choices": [
+            "cytosine.",
+            "guanine.",
+            "thymine.",
+            "uracil."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "The pattern of inheritance shown by malignant hyperthermia (hyperpyrexia) is:",
+        "subject": "medical_genetics",
+        "choices": [
+            "autosomal dominant.",
+            "autosomal recessive.",
+            "X-linked dominant.",
+            "X-linked recessive."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Mapping of human chromosomes:",
+        "subject": "medical_genetics",
+        "choices": [
+            "has been restricted to the sex chromosomes because of small family sizes",
+            "proceeded much more successfully as large numbers of DNA markers became available.",
+            "has determined that the number of linkage groups is about twice the number of chromosomes",
+            "has demonstrated that almost all of the DNA is involved in coding for genes"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Intergenerational transmission to offspring can occur as a result of parental exposures to ______.",
+        "subject": "medical_genetics",
+        "choices": [
+            "war",
+            "natural disasters",
+            "hunger",
+            "all of these"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Asp235Phe in a molecular report indicates that:",
+        "subject": "medical_genetics",
+        "choices": [
+            "asparagine has been replaced by phenylalanine.",
+            "phenylalanine has been replaced by asparagine.",
+            "aspartic acid has been replaced by phenylalanine.",
+            "phenylalanine has been replaced by aspartic acid."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "The risk of abnormality in the child of a mother with untreated phenylketonuria is:",
+        "subject": "medical_genetics",
+        "choices": [
+            "1%",
+            "10%",
+            "25%",
+            "Almost 100%"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Exon skipping is associated with:",
+        "subject": "medical_genetics",
+        "choices": [
+            "nonsense mutations.",
+            "regulatory mutations.",
+            "RNA processing mutations.",
+            "silent mutations."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following is not a chromosome instability syndrome?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Klinefelter syndrome",
+            "Ataxia telangiectasia",
+            "Fanconi anaemia",
+            "Bloom syndrome"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Normal adult haemoglobin (Hb A) consists of:",
+        "subject": "medical_genetics",
+        "choices": [
+            "two α (alpha) and two β (beta) chains.",
+            "two α and two γ (gamma) chains.",
+            "two α and two δ (delta) chains.",
+            "four γ chains."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In a condition such as schizophrenia the recurrence risk will be greatest for which of the following relatives of an affected individual?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Brother",
+            "Nephew",
+            "Grandchild",
+            "Aunt"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The mutation in sickle-cell disease consists of:",
+        "subject": "medical_genetics",
+        "choices": [
+            "a deletion.",
+            "a duplication.",
+            "an insertion.",
+            "a point mutation."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following is an example of monosomy?",
+        "subject": "medical_genetics",
+        "choices": [
+            "46,XX",
+            "47,XXX",
+            "69,XYY",
+            "45,X"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "QTL analysis is used to",
+        "subject": "medical_genetics",
+        "choices": [
+            "identify chromosome regions associated with a complex trait in a genetic cross",
+            "determine which genes are expressed at a developmental stage",
+            "map genes in bacterial viruses",
+            "identify RNA polymerase binding sites"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What would be the frequency of AABBCC individuals from a mating of two AaBbCc individuals?",
+        "subject": "medical_genetics",
+        "choices": [
+            "1.0/64",
+            "1.0/32",
+            "1.0/128",
+            "1.0/256"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "It is currently estimated that there are ______ human protein-coding genes although this estimate may be reduced over time.",
+        "subject": "medical_genetics",
+        "choices": [
+            "10,000–15,000",
+            "19,000–20,000",
+            "29,000–30,000",
+            "100,000"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "With which of the following relatives is an individual most likely to share a common HLA haplotype?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Father",
+            "Mother",
+            "Sister",
+            "Son"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following genes conveys susceptibility for polygenic Alzheimer disease?",
+        "subject": "medical_genetics",
+        "choices": [
+            "APP",
+            "PS1",
+            "PS2",
+            "APOE"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The DiGeorge/Shprintzen syndrome is caused by a deletion in which chromosome?",
+        "subject": "medical_genetics",
+        "choices": [
+            "4",
+            "7",
+            "15",
+            "22"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "X-chromosome inactivation",
+        "subject": "medical_genetics",
+        "choices": [
+            "results in genetically turning off one of the two X chromosomes in female mammals",
+            "takes place in humans so that the same X chromosome is inactive in all of the cells of a female",
+            "is the cause of the Y chromosome being genetically inactive",
+            "occurs in fruit flies but not in mammals"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The pattern of inheritance shown by glucose-6-phosphate dehydrogenase (G6PD) deficiency is:",
+        "subject": "medical_genetics",
+        "choices": [
+            "autosomal dominant.",
+            "autosomal recessive.",
+            "X-linked dominant.",
+            "X-linked recessive."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Homeobox sequences",
+        "subject": "medical_genetics",
+        "choices": [
+            "are present in the genome of many animal species",
+            "are found in prokaryotes but not in eukaryotes",
+            "were identified as the integration sites for bacterial viruses",
+            "represent integration sites for transposable elements"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following karyotypes is diagnostic of Down syndrome",
+        "subject": "medical_genetics",
+        "choices": [
+            "46,XX,der(14;21)(q10;q10)pat+21",
+            "47,XY,+13",
+            "45,XX,rob,(14;21)(q10;q10)",
+            "46,XY,t(2;3)(q21;q12)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Nature is more important for ______ differences, while nurture has greater influence on ______ differences.",
+        "subject": "medical_genetics",
+        "choices": [
+            "structural and anatomical; psychological and social",
+            "psychological and social; structural and anatomical",
+            "structural and psychological; anatomical and social",
+            "social and anatomical; psychological and structural"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following would result in Angelman syndrome?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Maternal UPD 15",
+            "Paternal UPD 15",
+            "Deletion in the paternally derived chromosome 15",
+            "A mutation in the SNRPN promoter"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Recombinant alpha-iduronidase is used for the treatment of which disease/syndrome?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Fabry disease",
+            "Gaucher disease",
+            "Hurler syndrome",
+            "Pompe disease"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Research from Moshe Szyf and colleagues has provided significant findings on the epigenetic influences of prenatal maternal stress. This work has been labelled ______.",
+        "subject": "medical_genetics",
+        "choices": [
+            "developmental epigenetics",
+            "social epigenetics",
+            "fetal epigenetics",
+            "maternal epigenetics"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "If both parents are affected with the same autosomal recessive disorder then the probability that each of their children will be affected equals ___.",
+        "subject": "medical_genetics",
+        "choices": [
+            "1 in 4",
+            "1 in 2",
+            "2 in 3",
+            "1"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The mutational mechanism in δβ-thalassaemia consists of:",
+        "subject": "medical_genetics",
+        "choices": [
+            "a deletion.",
+            "a duplication.",
+            "an insertion.",
+            "a point mutation."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Assuming Hardy-Weinberg equilibrium, the genoypte frequency of heterozygotes, if the frequency of the two alleles at the gene being studied are 0.6 and 0.4, will be:",
+        "subject": "medical_genetics",
+        "choices": [
+            "0.8",
+            "0.64",
+            "0.48",
+            "0.32"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Familial hypercholesterolaemia is caused by mutations in the gene which encodes what?",
+        "subject": "medical_genetics",
+        "choices": [
+            "High density lipoprotein",
+            "HMG-CoA reductase",
+            "Low density lipoprotein",
+            "Low density lipoprotein receptor"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "A cross between two true breeding lines one with dark blue flowers and one with bright white flowers produces F1 offspring that are light blue. When the F1 progeny are selfed a 1:2:1 ratio of dark blue to light blue to white flowers is observed. What genetic phenomenon is consistent with these results?",
+        "subject": "medical_genetics",
+        "choices": [
+            "epistasis",
+            "incomplete dominance",
+            "codominance",
+            "inbreeding depression"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The proportion of babies that have an abnormality identifiable at birth is _____.",
+        "subject": "medical_genetics",
+        "choices": [
+            "1 in 10",
+            "1 in 40",
+            "1 in 100",
+            "1 in 500"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "______ explained genetic disorders such as alkaptonuria and albinism.",
+        "subject": "medical_genetics",
+        "choices": [
+            "Recessive inheritance has",
+            "Dominant genes have",
+            "X chromosomes",
+            "Y chromosomes"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following conditions shows anticipation in paternal transmission?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Huntington disease",
+            "Marfan syndrome",
+            "Cystic fibrosis",
+            "Fragile X syndrome"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A homeotic mutation is one which",
+        "subject": "medical_genetics",
+        "choices": [
+            "is present in only one form in an individual",
+            "substitutes one body part for another in development",
+            "results in development of a tumor",
+            "is wild type at one temperature and abnormal at another"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following is not a familial cancer syndrome",
+        "subject": "medical_genetics",
+        "choices": [
+            "Familial adenomatous polyposis",
+            "Li-Fraumeni syndrome",
+            "Von Hippel-Lindau syndrome",
+            "Waardenburg syndrome"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The epigenetic inheritance system has been described as ______ (Mayr and Provine, 1980).",
+        "subject": "medical_genetics",
+        "choices": [
+            "genotype inheritance",
+            "soft inheritance",
+            "RNA inheritance",
+            "hard inheritance"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Severe anaemia at birth is a feature of what?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Alpha-thalassaemia",
+            "Beta-thalassaemia",
+            "Hereditary persistence of fetal haemoglobin",
+            "Sickle cell disease"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "If an X-linked recessive disorder is in Hardy-Weinberg equilibrium and the incidence in males equals 1 in 100, then the expected incidence of affected homozygous females would be _______.",
+        "subject": "medical_genetics",
+        "choices": [
+            "1 in 1000",
+            "1 in 4000",
+            "1 in 10 000",
+            "1 in 40 000"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tay-Sachs disease is caused by deficiency of _________________?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Alpha-L-iduronidase",
+            "Glucose-6-phosphatase",
+            "Hexosaminidase A",
+            "Homogentisic acid oxidase"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "A nonsense mutation involves:",
+        "subject": "medical_genetics",
+        "choices": [
+            "a regulatory sequence.",
+            "an AG splice acceptor site.",
+            "the creation of a different amino acid.",
+            "the creation of a stop codon."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The polymerase chain reaction or PCR is a technique that",
+        "subject": "medical_genetics",
+        "choices": [
+            "was used to demonstrate DNA as the genetic material",
+            "is used to determine the content of minerals in a soil sample",
+            "uses short DNA primers and a thermostable DNA polymerase to replicate specific DNA sequences in vitro.",
+            "measures the ribosome transfer rate during translation"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "The maternal serum level of alpha-fetoprotein (AFP) is lower than average in which situation?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Down syndrome",
+            "Exomphalos",
+            "Neural tube defects",
+            "Twin pregnancies"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "______ has been described as the phenomenon by which one genotype can give rise to a range of different physiological or morphological states in response to different environmental conditions during development (West-Eberhard, 1989).",
+        "subject": "medical_genetics",
+        "choices": [
+            "Fetal plasticity",
+            "The fetal origins hypothesis",
+            "Developmental plasticity",
+            "Environmental plasticity"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Arabidopsis is advantageous for plant genetic research because:",
+        "subject": "medical_genetics",
+        "choices": [
+            "it is commercially important as a food crop",
+            "it is an endangered species",
+            "it is the closest to humans of any existing plant",
+            "it is a small plant with a small genome size which can be raised inexpensively"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The proportion of genes shared by first cousins is on average ___.",
+        "subject": "medical_genetics",
+        "choices": [
+            "1.0/2",
+            "1.0/4",
+            "1.0/8",
+            "1.0/16"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following is not a tumour suppressor gene?",
+        "subject": "medical_genetics",
+        "choices": [
+            "APC",
+            "NF1",
+            "RB1",
+            "RET"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following is a feature of X-linked dominant inheritance?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Parental consanguinity",
+            "Male to male transmission",
+            "Transmission only by females",
+            "Transmitted by males only to females"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "On average, how many fragments would a restriction enzyme which recognizes a specific 4 base sequence in DNA be expected to cleave a double-stranded bacteriophage with a genome size of 5,000 bp into?",
+        "subject": "medical_genetics",
+        "choices": [
+            "about 2",
+            "about 4",
+            "about 20",
+            "about 50"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Positional cloning refers to",
+        "subject": "medical_genetics",
+        "choices": [
+            "using a selection procedure to clone a cDNA",
+            "cloning a portion of a gene using PCR",
+            "isolating a gene by PCR using primers from another species",
+            "mapping a gene to a chromosomal region and then identifying and cloning a genomic copy of the gene from the region"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Plasmid vectors for cloning",
+        "subject": "medical_genetics",
+        "choices": [
+            "can generally accommodate larger inserts than phage vectors can",
+            "grow within bacteria, and are present in bacterial colonies on an agar plate",
+            "can accommodate inserts of over 100 kilobases",
+            "include centromeres to allow propagation in yeast"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Transcriptional activator proteins",
+        "subject": "medical_genetics",
+        "choices": [
+            "bind regions near a eukaryotic gene and allow an RNA polymerase to transcribe a gene",
+            "bind to ribosomes to activate the production of specific proteins",
+            "are produced during an infection of bacteria by a phage",
+            "are essential to function of transfer RNAs during translation"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Assuming that the level of glucose is low, a mutation in the repressor associated with the lac operon of E. coli which prevents binding of the repressor to lactose should result in: ",
+        "subject": "medical_genetics",
+        "choices": [
+            "constitutive expression of the lac operon genes",
+            "lack of expression or reduced expression of the lac operon genes under all circumstances",
+            "expression of the genes only when lactose is present",
+            "expression of the genes only when lactose is absent"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "In meiosis, recombination occurs in:",
+        "subject": "medical_genetics",
+        "choices": [
+            "Metaphase I.",
+            "Prophase I.",
+            "Metaphase II.",
+            "Prophase II."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Leber's hereditary optic atrophy is caused by a mutation in:",
+        "subject": "medical_genetics",
+        "choices": [
+            "chromosome 12.",
+            "chromosome 18.",
+            "chromosome 21.",
+            "mitochondrial DNA."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Regarding exons, which, if any, of the following statements is correct?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Some exons in protein-coding genes consist of noncoding DNA.",
+            "The first exon of a protein-coding gene always contains the translational start site.",
+            "The last exon of a protein-coding gene always contains the normal termination codon.",
+            "A coding exon is always translated in just one of the three possible forward reading frames."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In humans, each cell normally contains ______ of chromosomes.",
+        "subject": "medical_genetics",
+        "choices": [
+            "11 pairs",
+            "23 pairs",
+            "32 pairs",
+            "46 pairs"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "An increase in the inbreeding coefficient, F, is likely to result in:",
+        "subject": "medical_genetics",
+        "choices": [
+            "reduced likelihood of heterozygotes being present in a population",
+            "higher proportion of genes that show linkage",
+            "higher proportion of genes with introns",
+            "higher level of difference between RNA molecules in two daughter cells"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following findings on prenatal ultrasound examination would not raise suspicion of a chromosome abnormality?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Duodenal atresia",
+            "Holoprosencephaly",
+            "Hydrops fetalis",
+            "Monozygotic twins"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The likelihood of an individual in a population carrying two specific alleles of a human DNA marker, each of which has a frequency of 0.2, will be:",
+        "subject": "medical_genetics",
+        "choices": [
+            "0.4",
+            "0.32",
+            "0.08",
+            "0.02"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "An Hfr strain of E. coli contains:",
+        "subject": "medical_genetics",
+        "choices": [
+            "a vector of yeast or bacterial origin which is used to make many copies of a particular DNA sequence",
+            "a bacterial chromosome with a human gene inserted",
+            "a bacterial chromosome with the F factor inserted",
+            "a human chromosome with a transposable element inserted"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Male to male transmission is a key feature of which pattern of inheritance?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Autosomal dominant",
+            "Autosomal recessive",
+            "X-linked dominant",
+            "X-linked recessive"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Simple tandem repeat polymorphisms in humans are most useful for",
+        "subject": "medical_genetics",
+        "choices": [
+            "solving criminal and paternity cases",
+            "reconstructing the relationships of humans and chimps.",
+            "estimating relationships of humans and Neanderthals",
+            "transferring disease resistance factors into bone marrow cells"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following disorders is not suitable for population carrier screening?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Cystic fibrosis",
+            "Oculocutaneous albinism",
+            "Sickle cell disease",
+            "Tay-Sachs disease"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following disorders does not show X-linked inheritance?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Duchenne muscular dystrophy",
+            "Tay-Sachs disease",
+            "Haemophilia A",
+            "Haemophilia B"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The most common chromosome abnormality in first trimester spontaneous miscarriages is:",
+        "subject": "medical_genetics",
+        "choices": [
+            "trisomy.",
+            "monosomy.",
+            "triploidy.",
+            "tetrasomy."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following karyotypes is not compatible with survival to birth?",
+        "subject": "medical_genetics",
+        "choices": [
+            "47,XY,+13",
+            "47,XX,+18",
+            "47,XY,+21",
+            "45,Y"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Male breast cancer is associated with mutations in ___.",
+        "subject": "medical_genetics",
+        "choices": [
+            "BRCA1",
+            "BRCA2",
+            "NF1",
+            "RET"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Pseudocholinesterase deficiency is associated with increased sensitivity to what?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Fava beans",
+            "Halothane",
+            "Primaquine",
+            "Succinylcholine"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The most common cystic fibrosis mutation consists of:",
+        "subject": "medical_genetics",
+        "choices": [
+            "a deletion.",
+            "a duplication.",
+            "a substitution.",
+            "an insertion."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The normal human chromosome diploid number is:",
+        "subject": "medical_genetics",
+        "choices": [
+            "23",
+            "24",
+            "46",
+            "48"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Advantages of using adenoviruses for gene therapy include:",
+        "subject": "medical_genetics",
+        "choices": [
+            "long term expression.",
+            "low risk of insertional mutagenesis.",
+            "low immunogenecity.",
+            "easy assembly."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following statements about Hirschsprung disease is incorrect?",
+        "subject": "medical_genetics",
+        "choices": [
+            "It shows an association with Down syndrome.",
+            "It is more common in girls than in boys.",
+            "RET is a major susceptibility gene.",
+            "Recurrence risks are greater for long segment disease than for short segment disease."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following conditions is caused by a trinucleotide (triplet) repeat expansion?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Cystic fibrosis",
+            "Duchenne muscular dystrophy",
+            "Huntington disease",
+            "Osteogenesis imperfecta"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following causes female pseudohermaphroditism?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Androgen insensitivity",
+            "Campomelic dysplasia",
+            "Congenital adrenal hyperplasia",
+            "Klinefelter syndrome"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which component of transcribed RNA in eukaryotes is present in the initial transcript but is removed before translation occurs?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Intron",
+            "3’ Poly A tail",
+            "Ribosome binding site",
+            "5’ cap"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following is not a recognized complication of cystic fibrosis?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Cancer of the oesophagus",
+            "Congenital absence of the vas deferens",
+            "Diabetes mellitus",
+            "Liver cirrhosis"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following diagnostic techniques is of no value for the diagnosis of neural tube defects?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Amniocentesis",
+            "Chorion villus sampling (CVS)",
+            "Maternal serum screening",
+            "Ultrasonography"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following conditions is a peroxisomal disorder?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Acute intermittent porphyria",
+            "Maple syrup urine disease",
+            "Medium chain acyl-CoA dehydrogenase deficiency",
+            "Zellweger syndrome"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Marked microsatellite instability is a feature of:",
+        "subject": "medical_genetics",
+        "choices": [
+            "familial adenomatous polyposis.",
+            "hereditary non-polyposis colon cancer (HNPCC).",
+            "multiple endocrine adenomatosis type 2.",
+            "neurofibromatosis 1."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The common mutation in α-thalassaemia consists of:",
+        "subject": "medical_genetics",
+        "choices": [
+            "a deletion.",
+            "a duplication.",
+            "an insertion.",
+            "a point mutation."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A baby born with pulmonary hypoplasia secondary to oligohydramnios caused by renal agenesis would be classified as having:",
+        "subject": "medical_genetics",
+        "choices": [
+            "an association.",
+            "a dysplasia.",
+            "a sequence.",
+            "a syndrome."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "The ______ is the set of observable characteristics and is the sum of genetic and environmental effects.",
+        "subject": "medical_genetics",
+        "choices": [
+            "genotype",
+            "phenotype",
+            "both genotype and phenotype",
+            "neither genotype or phenotype"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following trisomy karyotypes has the mildest effect on human development?",
+        "subject": "medical_genetics",
+        "choices": [
+            "47,XXX",
+            "47,XXY",
+            "47,XX,+13",
+            "47,XY,+21"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Mutations that cause achondroplasia exert an effect which can be classified as:",
+        "subject": "medical_genetics",
+        "choices": [
+            "dominant negative.",
+            "gain-of-function.",
+            "haploinsufficiency.",
+            "loss-of-function."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The presence of two or more cell lines from different zygotes in a single individual is known as:",
+        "subject": "medical_genetics",
+        "choices": [
+            "mosaicism.",
+            "diploidy.",
+            "aneuploidy.",
+            "chimaerism."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "The risk for miscarriage associated with amniocentesis is approximately ____.",
+        "subject": "medical_genetics",
+        "choices": [
+            "1 in 10",
+            "1 in 50",
+            "1 in 100 to 1 in 200",
+            "1 in 1000"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Autozygosity mapping is used to map disorders that show which pattern of inheritance?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Autosomal dominant",
+            "Autosomal recessive",
+            "X-linked dominant",
+            "X-linked recessive"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Consanguinity shows a strong association with which pattern of inheritance?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Autosomal dominant",
+            "Autosomal recessive",
+            "X-linked dominant",
+            "X-linked recessive"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Most new mutations appear to be",
+        "subject": "medical_genetics",
+        "choices": [
+            "beneficial",
+            "neutral or deleterious",
+            "present in homozygotes rather than heterozygotes",
+            "detectable using allozyme studies (protein electrophoresis)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Twin studies in humans are useful because",
+        "subject": "medical_genetics",
+        "choices": [
+            "they allow genetic as opposed to environmental influences on variation in a trait to be estimated",
+            "cloning of genes is facilitated by the presence of extra copies",
+            "they allow improved expression of genes",
+            "twins have a greater likelihood of being heterozygous"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Complete the following sentence. The Philadelphia chromosome:",
+        "subject": "medical_genetics",
+        "choices": [
+            "is an example of gene amplification.",
+            "is a product of a reciprocal translocation.",
+            "causes Burkitt's lymphoma.",
+            "causes retinoblastoma."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Enzyme assay can be used to identify carriers of:",
+        "subject": "medical_genetics",
+        "choices": [
+            "Cystic fibrosis.",
+            "Fragile X syndrome.",
+            "Oculocutaneous albinism.",
+            "Tay-Sachs disease."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "A high blood ammonia level occurs in:",
+        "subject": "medical_genetics",
+        "choices": [
+            "galactosaemia.",
+            "Hurler's syndrome.",
+            "ornithine transcarbamylase (OTC) deficiency.",
+            "phenylketonuria."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "In genome-wide association studies, known SNPs explain ______ of the variation in body mass index despite the evidence of greater than 50% heritability from twin and family studies.",
+        "subject": "medical_genetics",
+        "choices": [
+            "only 5%",
+            "less than 1%",
+            "only 13%",
+            "less than 2%"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Differential distribution of substances in the egg most typically results in:",
+        "subject": "medical_genetics",
+        "choices": [
+            "differences in gene expression which may establish a pattern in the embryo as the cells divide",
+            "amplification of specific genes during development",
+            "development of polyploid tissues",
+            "loss of specific genes during development"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following conditions is not caused by a mutation in FGFR3?",
+        "subject": "medical_genetics",
+        "choices": [
+            "Achondroplasia",
+            "Crouzon syndrome",
+            "Thanatophoric dysplasia",
+            "Waardenburg syndrome"
+        ],
+        "answer": 3
+    }
+]

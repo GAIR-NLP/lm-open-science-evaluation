@@ -1,0 +1,57 @@
+{
+    "cs-bench-assertion-questions-cot": {
+        "test_path": "datasets/computer_science/cs_bench/cs_bench_assertion.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_cs_bench_assertion",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "CSBenchAssertion"
+    },
+    "cs-bench-multiple-choice-questions-cot":{
+        "test_path": "datasets/computer_science/cs_bench/cs_bench_multiple_choice.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_cs_bench_multiple_choice",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "CSBenchMultipleChoice"
+    },
+    "mmlu-college-computer-science-cot":{
+        "test_path": "datasets/computer_science/mmlu/mmlu_college_computer_science.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUCollegeComputerScience"
+    },
+    "mmlu-computer-security-cot":{
+        "test_path": "datasets/computer_science/mmlu/mmlu_computer_security.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUComputerSecurity"
+    },
+    "mmlu-high-school-computer-science-cot":{
+        "test_path": "datasets/computer_science/mmlu/mmlu_high_school_computer_science.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUHighSchoolComputerScience"
+    }
+}

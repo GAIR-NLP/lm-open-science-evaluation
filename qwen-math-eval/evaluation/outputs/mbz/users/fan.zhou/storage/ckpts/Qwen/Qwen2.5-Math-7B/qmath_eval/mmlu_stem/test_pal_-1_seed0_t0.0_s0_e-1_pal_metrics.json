@@ -1,0 +1,29 @@
+{
+    "num_samples": 3018,
+    "num_scores": 3018,
+    "timeout_samples": 0,
+    "empty_samples": 0,
+    "acc": 71.2,
+    "type_acc": {
+        "abstract_algebra": 64.0,
+        "astronomy": 67.1,
+        "college_biology": 61.1,
+        "college_chemistry": 49.0,
+        "college_computer_science": 62.0,
+        "college_mathematics": 63.0,
+        "college_physics": 61.8,
+        "computer_security": 72.0,
+        "conceptual_physics": 77.0,
+        "electrical_engineering": 66.2,
+        "elementary_mathematics": 91.8,
+        "high_school_biology": 73.2,
+        "high_school_chemistry": 62.6,
+        "high_school_computer_science": 82.0,
+        "high_school_mathematics": 78.9,
+        "high_school_physics": 62.9,
+        "high_school_statistics": 72.7,
+        "machine_learning": 53.6
+    },
+    "time_use_in_second": 1459.3823955059052,
+    "time_use_in_minite": "24:19"
+}

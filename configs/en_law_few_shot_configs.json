@@ -1,0 +1,24 @@
+{
+    "mmlu-international-law-cot":{
+        "test_path": "datasets/law/mmlu/mmlu_international_law.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUInternationalLaw"
+    },
+    "mmlu-professional-law-cot":{
+        "test_path": "datasets/law/mmlu/mmlu_professional_law.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUProfessionalLaw"
+    }
+}

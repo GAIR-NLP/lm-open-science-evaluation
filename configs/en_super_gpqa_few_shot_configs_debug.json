@@ -1,0 +1,46 @@
+{
+    "Super_GPQA-Chemistry-cot": {
+        "test_path": "datasets/chemistry/super_gpqa/super_gpqa_chemistry.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    },
+    "Super_GPQA-Physics-cot": {
+        "test_path": "datasets/physics/super_gpqa/super_gpqa_physics.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    },
+    "Super_GPQA-Biology-cot": {
+        "test_path": "datasets/medicine/super_gpqa/super_gpqa_biology.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    },
+    "Super_GPQA-Medicine-cot": {
+        "test_path": "datasets/medicine/super_gpqa/super_gpqa_medicine.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_super_gpqa",
+        "answer_extraction_fn": "extract_super_gpqa",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "SuperGPQAPrompt"
+    }
+}

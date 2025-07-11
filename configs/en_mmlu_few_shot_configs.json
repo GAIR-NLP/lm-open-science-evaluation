@@ -1,0 +1,13 @@
+{
+    "mmlu":{
+        "test_path": "datasets/mmlu/mmlu.json",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_mmlu_stem",
+        "answer_extraction_fn": "extract_mmlu_stem",
+        "eval_fn": "eval_mmlu_stem",
+        "few_shot_prompt": "MMLUSTEMPrompt"
+    }
+}

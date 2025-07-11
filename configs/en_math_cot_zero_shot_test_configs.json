@@ -1,0 +1,68 @@
+{
+    "gsm8k-cot": {
+        "test_path": "datasets/gsm8k/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_gsm8k_test",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "ORZMathPrompt"
+    },
+    "math-cot": {
+        "test_path": "datasets/math/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_math_test",
+        "answer_extraction_fn": "extract_math_few_shot_cot_answer",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "ORZMathPrompt"
+    },
+    "math-500-cot": {
+        "test_path": "datasets/math500/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_math500",
+        "answer_extraction_fn": "extract_math_few_shot_cot_answer",
+        "eval_fn": "eval_math",
+        "few_shot_prompt": "ORZMathPrompt"
+    },
+    "olympiad-bench-cot": {
+        "test_path": "datasets/olympiad_bench/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_olympiad_bench",
+        "answer_extraction_fn": "extract_olympiad_math_answer",
+        "eval_fn": "eval_olympiad_math",
+        "few_shot_prompt": "ORZMathPrompt"
+    },
+    "amc-cot": {
+        "test_path": "datasets/amc23/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_amc",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "ORZMathPrompt"
+    },
+    "ocw-courses-cot": {
+        "test_path": "datasets/ocw/test.jsonl",
+        "language": "en",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_ocwcourses",
+        "answer_extraction_fn": "extract_ocwcourses_few_shot_answer",
+        "eval_fn": "eval_ocwcourses",
+        "few_shot_prompt": "ORZMathPrompt"
+    }
+}

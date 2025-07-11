@@ -1,0 +1,42 @@
+{
+    "cmath-cot-test-6shot": {
+        "test_path": "datasets/cmath/test.jsonl",
+        "language": "zh",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_cmath",
+        "answer_extraction_fn": "extract_cmath_few_shot_test",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTCMATHPrompt"
+    },
+    "mgsm-zh-8shot": {
+        "test_path": "datasets/mgsm_zh/mgsm_zh.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_mgsm_zh",
+        "answer_extraction_fn": "extract_last_single_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTMGSMZHPrompt"
+    },
+    "cmath-cot-test-4shot": {
+        "test_path": "datasets/cmath/test.jsonl",
+        "language": "zh",
+        "tasks": [
+            "cot"
+        ],
+        "process_fn": "process_cmath",
+        "answer_extraction_fn": "extract_cmath_few_shot_test",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTCMATHPrompt4Shot"
+    },
+    "mgsm-zh-4shot": {
+        "test_path": "datasets/mgsm_zh/mgsm_zh.jsonl",
+        "language": "zh",
+        "tasks": ["cot"],
+        "process_fn": "process_mgsm_zh",
+        "answer_extraction_fn": "extract_last_single_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTMGSMZHPrompt4Shot"
+    }
+}

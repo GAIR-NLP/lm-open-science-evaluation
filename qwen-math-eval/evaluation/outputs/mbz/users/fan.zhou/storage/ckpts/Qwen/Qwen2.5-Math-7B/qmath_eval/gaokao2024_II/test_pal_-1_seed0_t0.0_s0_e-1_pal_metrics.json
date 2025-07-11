@@ -1,0 +1,14 @@
+{
+    "num_samples": 14,
+    "num_scores": 14,
+    "timeout_samples": 0,
+    "empty_samples": 3,
+    "acc": 7.1,
+    "type_acc": {
+        "blank": 0.0,
+        "multi": 0.0,
+        "single": 12.5
+    },
+    "time_use_in_second": 19.93949580192566,
+    "time_use_in_minite": "0:19"
+}
