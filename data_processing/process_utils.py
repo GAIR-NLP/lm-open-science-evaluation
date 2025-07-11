@@ -349,7 +349,7 @@ def process_gpqa(item):
     formatted_item = {
         "dataset": "gpqa",
         "id": item['id'],
-        'answer': chr(65 + correct_index),  # 将索引转换为A、B、C、D
+        'answer': chr(65 + correct_index),  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{item['Question'].strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -367,7 +367,7 @@ def process_medqa(item):
     formatted_item = {
         "dataset": "medqa",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -390,7 +390,7 @@ def process_medmcqa(item):
     formatted_item = {
         "dataset": "medmcqa",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -434,7 +434,7 @@ def process_mmlu(item):
     formatted_item = {
         "dataset": "mmlu-medicine",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -458,7 +458,7 @@ def process_ChemBench_multi_choise(item):
     formatted_item = {
         "dataset": "ChemBench_multi_choise",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -495,7 +495,7 @@ def process_newton_confident_questions(item):
     formatted_item = {
         "dataset": "newton_confident_questions",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -527,7 +527,7 @@ def process_newton_explicit_questions(item):
     formatted_item = {
         "dataset": "newton_explicit_questions",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -553,7 +553,7 @@ def process_newton_implicit_questions(item):
     formatted_item = {
         "dataset": "newton_implicit_questions",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -577,7 +577,7 @@ def process_piqa(item):
     formatted_item = {
         "dataset": "piqa",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -642,7 +642,7 @@ def process_cs_bench_multiple_choice(item):
     formatted_item = {
         "dataset": "cs_bench_multiple_choice",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nWhat of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -663,7 +663,7 @@ def process_cs_bench_assertion(item):
     formatted_item = {
         "dataset": "cs_bench_assertion",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\nPlease determine whether the statement is correct. What of the following is the right choice? Explain your answer.\n{option_str.strip()}"},
             {'role': 'assistant', 'content': ''}
@@ -686,7 +686,7 @@ def process_mmlu_sft(item):
     formatted_item = {
         "dataset": "mmlu",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'options': item['choices'],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -719,7 +719,7 @@ def process_gpqa_sft(item):
     formatted_item = {
         "dataset": "gpqa",
         "id": item['id'],
-        'answer': chr(65 + correct_index),  # 将索引转换为A、B、C、D
+        'answer': chr(65 + correct_index),  # convert index into A, B, C, and D
         'options': options,
         'messages': [
             {'role': 'user', 'content': f"{item['Question'].strip()}\n{option_str.strip()}"},
@@ -744,7 +744,7 @@ def process_super_gpqa(item):
     formatted_item = {
         "dataset": "super_gpqa",
         "id": item['uuid'],
-        'answer': correct_index,  # 将索引转换为A、B、C、D
+        'answer': correct_index,  # convert index into A, B, C, and D
         'options': options,
         'messages': [
             {'role': 'user', 'content': f"{item['question'].strip()}\n{option_str.strip()}"},
@@ -772,7 +772,7 @@ def process_mmlu_pro(item):
     formatted_item = {
         "dataset": "mmlu_pro",
         "id": item['question_id'],
-        'answer': correct_index,  # 将索引转换为A、B、C、D
+        'answer': correct_index,  # convert index into A, B, C, and D
         'options': options,
         'messages': [
             {'role': 'user', 'content': f"{item['question'].strip()}\n{option_str.strip()}"},
@@ -798,7 +798,7 @@ def process_ChemBench_multi_choise_sft(item):
     formatted_item = {
         "dataset": "ChemBench_multi_choise",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": choices,
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -820,7 +820,7 @@ def process_cs_bench_assertion_sft(item):
     formatted_item = {
         "dataset": "cs_bench_assertion",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": ["True", "False"],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -844,7 +844,7 @@ def process_cs_bench_multiple_choice_sft(item):
     formatted_item = {
         "dataset": "cs_bench_multiple_choice",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": [item["A"], item["B"], item["C"], item["D"]],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -863,7 +863,7 @@ def process_medqa_sft(item):
     formatted_item = {
         "dataset": "medqa",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D、E
+        'answer': answer,  # convert index into A, B, C, and D、E
         'options': [v.strip() for k, v in option_dict.items()],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -887,7 +887,7 @@ def process_medmcqa_sft(item):
     formatted_item = {
         "dataset": "medmcqa",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         'options': [item['opa'], item['opb'], item['opc'], item['opd']],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -940,7 +940,7 @@ def process_newton_confident_questions_sft(item):
     formatted_item = {
         "dataset": "newton_confident_questions",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": [v.strip() for k, v in option_dict.items()],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -966,7 +966,7 @@ def process_newton_explicit_questions_bool_sft(item):
     formatted_item = {
         "dataset": "newton_explicit_questions_bool",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": [v.strip() for k, v in option_dict.items()],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -994,7 +994,7 @@ def process_newton_explicit_questions_mc_sft(item):
     formatted_item = {
         "dataset": "newton_explicit_questions_bool",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": [v.strip() for k, v in option_dict.items()],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -1021,7 +1021,7 @@ def process_newton_implicit_questions_sft(item):
     formatted_item = {
         "dataset": "newton_implicit_questions",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": [v.strip() for k, v in option_dict.items()],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},
@@ -1046,7 +1046,7 @@ def process_piqa_sft(item):
     formatted_item = {
         "dataset": "piqa",
         "id": item['id'],
-        'answer': answer,  # 将索引转换为A、B、C、D
+        'answer': answer,  # convert index into A, B, C, and D
         "options": [v.strip() for k, v in option_dict.items()],
         'messages': [
             {'role': 'user', 'content': f"{question.strip()}\n{option_str.strip()}"},

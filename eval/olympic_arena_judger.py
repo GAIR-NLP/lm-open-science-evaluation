@@ -52,7 +52,7 @@ class Judger:
     
     def extract_boxed_answer(self, text):
         # extract answer wrapped in \boxed{} from models' output
-        # 找到所有 \boxed{ 的位置
+        # find all positions of \boxed{
         matches = []
         start_pos = 0
         while True:
@@ -60,12 +60,12 @@ class Judger:
             if not match:
                 break
             actual_pos = start_pos + match.start()
-            matches.append(start_pos + match.end())  # 保存 { 后面的位置
+            matches.append(start_pos + match.end())  # save the postion of {
             start_pos = actual_pos + 1
         
         if not matches:
             return text
-        # 处理最后一个 \boxed{
+        # process the last \boxed{
         start_index = matches[-1]
         end_index = start_index
         stack = 1
@@ -91,9 +91,8 @@ class Judger:
         
     def split_by_comma(self, expr: str):
         # Splits expressions by commas outside of brackets
-        # 用于处理逗号的嵌套情况
-        # 例子: "f(x, y, z), g(a, b, c), h(i, j)"
-        in_bracket_num = 0 # 这个值为0时，说明当前不在括号内部
+        # example: "f(x, y, z), g(a, b, c), h(i, j)"
+        in_bracket_num = 0 # Value of 0 indicates not currently inside parentheses
         splitted_expr = []
         start_idx = 0
         for i, char in enumerate(expr):

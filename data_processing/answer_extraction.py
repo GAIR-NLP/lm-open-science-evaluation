@@ -683,7 +683,7 @@ def extract_scibench_sft_answer(item):
 def extract_olympic_arena_sft_answer(item):
     reasoning = item.get("model_output")
     
-    # 找到所有 \boxed{ 的位置
+    # find all \boxed{
     matches = []
     start_pos = 0
     while True:
@@ -691,12 +691,12 @@ def extract_olympic_arena_sft_answer(item):
         if not match:
             break
         actual_pos = start_pos + match.start()
-        matches.append(start_pos + match.end())  # 保存 { 后面的位置
+        matches.append(start_pos + match.end())  #sive the position of { 
         start_pos = actual_pos + 1
     
     if not matches:
         return reasoning
-    # 处理最后一个 \boxed{
+    # process the last \boxed{
     start_index = matches[-1]
     end_index = start_index
     stack = 1
