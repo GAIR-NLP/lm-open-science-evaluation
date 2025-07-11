@@ -12,9 +12,13 @@ Our evaluation system supports reproducible experiments from the following resea
 
 This codebase builds upon and incorporates valuable features from [DeepSeek-Math](https://github.com/deepseek-ai/DeepSeek-Math) by DeepSeek AI.
 
-## 2. Setup
-Now it's recommended to use pip:
+## Setup
+Clone the repository and install the required dependencies. We recommend using a virtual environment with Python 3.10 or higher:
 ```bash
+git clone https://github.com/GAIR-NLP/OSES.git
+cd OSES
+conda create -n oses python=3.10
+conda activate oses
 pip install -r requirements.txt
 # for flash-attn, you may need to install it manually
 pip install flash-attn --no-build-isolation
