@@ -8,7 +8,6 @@ Our evaluation system supports reproducible experiments from the following resea
 
 - **MegaScience**: Pushing the Frontiers of Post-Training Datasets for Science Reasoning ([Paper]())
 - **OctoThinker**: Mid-training Incentivizes Reinforcement Learning Scaling ([arXiv:2506.20512](https://arxiv.org/abs/2506.20512))
-- **MegaMath**: Pushing the Limits of Open Math Corpora ([arXiv:2504.02807](https://arxiv.org/abs/2504.02807))
 
 This codebase builds upon and incorporates valuable features from [DeepSeek-Math](https://github.com/deepseek-ai/DeepSeek-Math) by DeepSeek AI.
 
