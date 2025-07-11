@@ -82,12 +82,9 @@ After configuring your benchmarks, create evaluation scripts in the `scripts` di
 
 The evaluation system will automatically process the configured benchmarks according to your specifications and generate comprehensive results.
 
-## 4. Model Outputs
-
-We provide all model outputs in `outputs.zip`.
+## Running specific evaluation suites
 
 
-## 5. 🚧 FineMath Eval
-```bash
-bash scripts/eval_finemath_template.sh
-```
+
+
+## Evaluation output
