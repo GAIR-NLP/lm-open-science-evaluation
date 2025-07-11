@@ -1,13 +1,16 @@
-cd /inspire/hdd/global_user/liupengfei-24025/rzfan/finemath-eval
-export PATH="/inspire/hdd/global_user/liupengfei-24025/rzfan/miniconda3/bin:$PATH"
-source activate finemath_eval
+#!/bin/bash
 
-export VLLM_HOST_IP="127.0.0.1"
+# Check if model_path argument is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <model_path>"
+    echo "Example: bash eval.sh /path/to/your/model"
+    exit 1
+fi
 
 # configuration args
 # default model ckpts will be in the first arg, send as a list
 # e.g., bash eval.sh ${model_paths_for_node[@]}
-model_path=/inspire/hdd/global_user/liupengfei-24025/rzfan/models/Qwen2.5-7B-Instruct
+model_path=$1
 tokenizer_path=${model_path}
 overwrite=true
 model_size="7b"
@@ -34,7 +37,7 @@ n_repeats=1
 export TOKENIZERS_PARALLELISM=false
 
 # submit eval jobs
-/inspire/hdd/global_user/liupengfei-24025/rzfan/miniconda3/envs/finemath_eval/bin/python submit_eval_jobs.py \
+python submit_eval_jobs.py \
     --n-gpus $n_gpus \
     --temperature $temperature \
     --n-repeats $n_repeats \

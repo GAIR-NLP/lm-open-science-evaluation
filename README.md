@@ -89,8 +89,7 @@ The evaluation system will automatically process the configured benchmarks accor
 To reproduce the results in the [MegaScience paper]():
 
 ```bash
-bash scripts/eval_science_textbooksreasoning.sh
-bash scripts/eval_science_megascience.sh
+bash scripts/eval_science.sh <model_path>
 ```
 
 ### OctoThinker Evaluations
