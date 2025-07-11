@@ -2,8 +2,15 @@
 
 ## Introduction
 
-The OSES (Open Science Evaluation System) is used within GAIR's scientific reasoning evaluation for both base and instruction-tuned LLMs. The repository includes code to faithfully reproduce the evaluation results in research papers such as
-We provide a test script for both zero-shot and few-shot evaluation on mathematical reasoning benchmarks used in our paper.
+The **Open Science Evaluation System (OSES)** is a comprehensive evaluation framework used internally within [GAIR](https://plms.ai/index.html) for evaluating scientific reasoning capabilities in both base and instruction-tuned LLMs. This repository provides the complete codebase to faithfully reproduce evaluation results from our research papers in mathematical and scientific reasoning.
+
+Our evaluation system supports reproducible experiments from the following research works:
+
+- **MegaScience**: Pushing the Frontiers of Post-Training Datasets for Science Reasoning ([Paper]())
+- **OctoThinker**: Mid-training Incentivizes Reinforcement Learning Scaling ([arXiv:2506.20512](https://arxiv.org/abs/2506.20512))
+- **MegaMath**: Pushing the Limits of Open Math Corpora ([arXiv:2504.02807](https://arxiv.org/abs/2504.02807))
+
+This codebase builds upon and incorporates valuable features from [DeepSeek-Math](https://github.com/deepseek-ai/DeepSeek-Math) by DeepSeek AI.
 
 ## 2. Setup
 Now it's recommended to use pip:
