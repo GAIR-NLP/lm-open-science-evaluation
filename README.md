@@ -23,32 +23,64 @@ pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
 
-## 3. Evaluation
+## Evaluation
 
-For chain-of-thought evaluation of DeepSeekMath-Instruct and DeepSeekMath-RL, our script (see `def markup_question()` in `run_subset_parallel.py`) processes each question as follows:
-* English questions: `{question}\nPlease reason step by step, and put your final answer within \\boxed{}.`
-* Chinese questions: `{question}\n请通过逐步推理来解答问题，并把最终答案放置于\\boxed{}中。`
+### Configuration Setup
 
-For tool-integrated reasoning, we process each question as follows:
-* English questions: `{question}\nPlease integrate natural language reasoning with programs to solve the problem above, and put your final answer within \\boxed{}.`
-* Chinese questions: `{question}\n请结合自然语言和Python程序语言来解答问题，并把最终答案放置于\\boxed{}中。`
+Before running evaluations, you need to create and configure benchmark settings in the `configs` directory. Each item in the configuration represents a benchmark to be evaluated.
 
-We provide an example of testing the DeepSeekMath-Base 7B using 8 GPUs.
+#### Configuration Format
 
-If you wish to use a different model or dataset, you can modify the configs in `submit_eval_jobs.py` and `configs/*test_configs.json`
+Create a configuration file in the `configs` directory with the following structure:
 
+```json
+{
+    "benchmark-name": {
+        "test_path": "path/to/test/dataset.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_function_name",
+        "answer_extraction_fn": "extraction_function_name", 
+        "eval_fn": "evaluation_function_name",
+        "few_shot_prompt": "PromptClassName"
+    }
+}
 ```
-python submit_eval_jobs.py --n-gpus 8
+
+#### Configuration Parameters
+
+- **`test_path`**: Path to the test dataset file (typically in JSONL or JSON format)
+- **`language`**: Language of the benchmark (`"en"` for English, `"zh"` for Chinese)
+- **`tasks`**: List of evaluation tasks to run:
+  - `"cot"`: Chain-of-thought evaluation for base models
+  - `"pal"`: Program-aided language evaluation for base models  
+  - `"sft"`: Evaluation for instruction-tuned models
+- **`process_fn`**: Function name for preprocessing the test dataset. Find the appropriate function in `data_processing/process_utils.py` and set the function name here
+- **`answer_extraction_fn`**: Function name for extracting answers from model responses. Find the corresponding function in `data_processing/answer_extraction.py`
+- **`eval_fn`**: Function name for evaluating extracted answers against ground truth. Find the appropriate function in `eval/eval_script.py`
+- **`few_shot_prompt`**: Prompt template for evaluation. Choose from existing prompts in the `few_shot_prompts` directory or create new ones. Available options include few-shot, zero-shot, or chain-of-thought prompts. If creating new prompts, remember to add them to `few_shot_prompts/__init__.py`
+
+#### Example Configuration
+
+```json
+{
+    "gsm8k-cot": {
+        "test_path": "datasets/gsm8k/test.jsonl",
+        "language": "en",
+        "tasks": ["cot"],
+        "process_fn": "process_gsm8k_test",
+        "answer_extraction_fn": "extract_gsm_few_shot_cot_answer",
+        "eval_fn": "eval_last_single_answer",
+        "few_shot_prompt": "CoTGSMPrompt"
+    }
+}
 ```
 
-Wait for all processes to finish, and then run the following command to aggregate results from all processes
+### Running Evaluations
 
-```
-python summarize_results.py [--eval-atp]
-```
-where the option `--eval-atp` will invoke `unsafe_score_minif2f_isabelle.py` to evaluate the informal-to-formal proving results. Please make sure you have set up the [PISA](https://github.com/wellecks/lm-evaluation-harness/blob/minif2f-isabelle/docs/isabelle_setup.md) server before using this option.
+After configuring your benchmarks, create evaluation scripts in the `scripts` directory. Set the appropriate model path and GPU configuration in your script, then execute the evaluation.
 
-A summary of all evaluation results will be saved as `evaluation_results.json`
+The evaluation system will automatically process the configured benchmarks according to your specifications and generate comprehensive results.
 
 ## 4. Model Outputs
 
