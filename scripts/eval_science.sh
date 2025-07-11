@@ -7,6 +7,8 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
+export VLLM_HOST_IP="127.0.0.1"
+
 # configuration args
 # default model ckpts will be in the first arg, send as a list
 # e.g., bash eval.sh ${model_paths_for_node[@]}
