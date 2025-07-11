@@ -1,6 +1,6 @@
 # configuration args
-model_path=/mbz/users/fan.zhou/storage/spt/hf/exp3/cpt_mistral_7b_owm_15B_lf/10B
-tokenizer_path=/mbz/users/fan.zhou/storage/spt/hf/exp3/cpt_mistral_7b_owm_15B_lf/10B
+model_path=exp3/cpt_mistral_7b_owm_15B_lf/10B
+tokenizer_path=exp3/cpt_mistral_7b_owm_15B_lf/10B
 model_size=1b
 overwrite=true
 use_vllm=true

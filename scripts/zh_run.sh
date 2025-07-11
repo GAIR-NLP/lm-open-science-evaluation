@@ -8,8 +8,7 @@ export MKL_SERVICE_FORCE_INTEL=1
 
 # configuration args
 # set default model path as well
-model_dir=${1:-/mbz/users/zengzhi.wang/storage/finemath/hf/tinyllama_1_1B_cpt/CC-MAIN-2024-26-mathrecall_iter1_v0_w_nltk_normalization_2000k_060_fw_edu_df_15B}
-# model_dir=/mbz/users/zengzhi.wang/storage/tinylm/hf/owm/tinyllama_1_1B_cpt/owm_raw
+model_dir=${1}
 for model_path in ${model_dir}/*; do
     tokenizer_path=${model_path}
     model_size=${2:-1b}

@@ -1,6 +1,6 @@
 # configuration args
-model_path=/mbz/users/fan.zhou/storage/ckpts/Qwen/Qwen2.5-Math-1.5B
-tokenizer_path=/mbz/users/fan.zhou/storage/ckpts/Qwen/Qwen2.5-Math-1.5B
+model_path=Qwen/Qwen2.5-Math-1.5B
+tokenizer_path=Qwen/Qwen2.5-Math-1.5B
 model_size=1b
 overwrite=true
 use_vllm=true

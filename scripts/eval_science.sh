@@ -13,9 +13,9 @@ overwrite=true
 model_size="7b"
 use_vllm=true
 no_markup_question=true
-test_conf=configs/en_olympic_arena_sft_configs.json
+test_conf=configs/en_science_sft_configs.json
 prompt_format=few_shot
-expname=eval_science_sft_debug
+expname=eval_science_sft
 
 # NOTE: output dir should better be a multi-level dir
 # I want to get like: finemath/hf/tinyllama_1_1B_cpt/CC-MAIN-2024-26-mathrecall_iter1_v0_w_nltk_normalization_2000k_060_fw_edu_df_15B/1.0B

@@ -2,7 +2,6 @@
 # set default model path as well
 model_dir=${1:-~/backup/storage/ckpts/Llama-3.1-8B-hf/}
 model_path=${1:-~/backup/storage/ckpts/Llama-3.1-8B-hf/}
-# model_dir=/mbz/users/zengzhi.wang/storage/tinylm/hf/owm/tinyllama_1_1B_cpt/owm_raw
 # for model_path in ${model_dir}/*; do
 tokenizer_path=${model_path}
 model_size=${2:-7b}

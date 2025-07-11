@@ -10,7 +10,7 @@ for dir in "$model_base_dir"/*/; do
     fi
 done
 echo model_dirs: ${model_dirs[@]}
-# 检查是否找到了模型目录
+
 if [ ${#model_dirs[@]} -eq 0 ]; then
     echo "Error: No model directories found in $model_base_dir"
     exit 1
