@@ -49,37 +49,37 @@ def aggregate_predictions(paths):
 style_hub = [
     {
         'marker': '*',
-        'markerfacecolor': '#b5dfff', #'#FFB3BA',  # 浅粉红
-        'markeredgecolor': '#4c9cff',  # 深粉红
+        'markerfacecolor': '#b5dfff', #'#FFB3BA',  # light pink
+        'markeredgecolor': '#4c9cff',  # dark pink
         'markersize': 7,
-        'color': '#4c9cff',            # 深粉红
+        'color': '#4c9cff',            # dark pink
         'linestyle': '-',
         'linewidth': 4,
     },
     {
         'marker': 's',
-        'markerfacecolor': '#e7daf7',  # 浅蓝
-        'markeredgecolor': '#af73fa',  # 深蓝
+        'markerfacecolor': '#e7daf7',  # light blue
+        'markeredgecolor': '#af73fa',  # dark blue
         'markersize': 6,
-        'color': '#af73fa',            # 深蓝
+        'color': '#af73fa',            # dark blue
         'linestyle': '-',
         'linewidth': 4,
     },
     {
         'marker': 'D',
-        'markerfacecolor': '#ffd399',  # 浅紫
-        'markeredgecolor': '#ffbb00',  # 深紫
+        'markerfacecolor': '#ffd399',  # light purple
+        'markeredgecolor': '#ffbb00',  # dark purple
         'markersize': 6,
-        'color': '#ffbb00',            # 深紫
+        'color': '#ffbb00',            # dark purple
         'linestyle': '-',
         'linewidth': 4,
     },
     {
         'marker': 'p',
-        'markerfacecolor': '#a1f2e9',  # 浅棕
-        'markeredgecolor': '#59c4b8',  # 深棕
+        'markerfacecolor': '#a1f2e9',  # light brown
+        'markeredgecolor': '#59c4b8',  # dark brown
         'markersize': 6,
-        'color': '#59c4b8',            # 深棕
+        'color': '#59c4b8',            # dark brown
         'linestyle': '-',
         'linewidth': 4,
     }
@@ -88,24 +88,24 @@ style_hub = [
 
 def read_csv_file(file_path):
     """
-    读取 CSV 文件并返回 DataFrame。
-    :param file_path: CSV 文件路径
+    Read CSV file and return DataFrame.
+    :param file_path: CSV file path
     :return: Pandas DataFrame
     """
     try:
         df = pd.read_csv(file_path)
-        print("CSV 文件读取成功!")
+        print("CSV file read successfully!")
         return df
     except Exception as e:
-        print(f"读取 CSV 文件失败: {e}")
+        print(f"Failed to read CSV file: {e}")
         return None
 
 def compute_row_means(df, exclude_columns=None):
     """
-    计算每一行的均值，排除指定列。
+    Calculate the mean of each row, excluding specified columns.
     :param df: Pandas DataFrame
-    :param exclude_columns: 需要排除的列列表
-    :return: 包含行均值的 Series
+    :param exclude_columns: List of columns to exclude
+    :return: Series containing row means
     """
     if "model" in df.columns:
         df = df.drop(columns=["model"], errors='ignore')
@@ -130,7 +130,7 @@ def plot_results(file_path):
     if "model" in df.columns:
         df = df.drop(columns=["model"], errors='ignore')
 
-    # 计算每一行的均值，排除指定列
+    # Calculate the mean of each row, excluding specified columns
     df['ave_wo_math_sat_cot'] = compute_row_means(df, exclude_columns=['math_sat-cot'])
     df['ave_wo_ocw_cot'] = compute_row_means(df, exclude_columns=['ocw-courses-cot'])
     df['average'] = compute_row_means(df, exclude_columns=None)
@@ -155,7 +155,7 @@ def plot_results(file_path):
         # plt.plot(range(0, len(df.iloc[:, i])), df.iloc[:, i], **style_hub[1])
         plt.plot(x_axis, df.iloc[:, i], **style_hub[1])
         plt.ylabel('Performance')
-        # legend 扁一些
+        # legend flatter
         # plt.legend(loc='lower right', fontsize='small')
         # benchmark name bold
         # plt.title(f'{benchmark_official_name_dict[df.columns[i]]}', fontweight='bold')
