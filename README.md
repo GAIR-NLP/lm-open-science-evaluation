@@ -1,8 +1,8 @@
-# Open Science Evaluation System (OSES)
+# Language Model Open Science Evaluation
 
 ## Introduction
 
-The **Open Science Evaluation System (OSES)** is a comprehensive evaluation framework used internally within [GAIR](https://plms.ai/index.html) for evaluating scientific reasoning capabilities in both base and instruction-tuned LLMs. This repository provides the complete codebase to faithfully reproduce evaluation results from our research papers in mathematical and scientific reasoning.
+The **Language Model Open Science Evaluation** is a comprehensive evaluation framework used internally within [GAIR](https://plms.ai/index.html) for evaluating scientific reasoning capabilities in both base and instruction-tuned LLMs. This repository provides the complete codebase to faithfully reproduce evaluation results from our research papers in mathematical and scientific reasoning.
 
 Our evaluation system supports reproducible experiments from the following research works:
 
@@ -14,10 +14,10 @@ This codebase builds upon and incorporates valuable features from [DeepSeek-Math
 ## Setup
 Clone the repository and install the required dependencies. We recommend using a virtual environment with Python 3.10 or higher:
 ```bash
-git clone https://github.com/GAIR-NLP/OSES.git
-cd OSES
-conda create -n oses python=3.10
-conda activate oses
+git clone https://github.com/GAIR-NLP/lm-open-science-evaluation.git
+cd lm-open-science-evaluation
+conda create -n lmose python=3.10
+conda activate lmose
 pip install -r requirements.txt
 # for flash-attn, you may need to install it manually
 pip install flash-attn --no-build-isolation
