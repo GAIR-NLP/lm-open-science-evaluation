@@ -73,7 +73,14 @@ def infer(args, test_data):
             model = LLM(model=args.model_name_or_path, tokenizer=args.tokenizer_name_or_path, trust_remote_code=True, tensor_parallel_size=len(os.environ['CUDA_VISIBLE_DEVICES'].split(",")))
         # eos_token = tokenizer.eos_token if tokenizer is not None and tokenizer.eos_token is not None else '</s>'
         # stop_words = [eos_token]
-        outputs = model.generate(prompts, SamplingParams(temperature=args.temperature, top_p=1.0, max_tokens=20480, n=1))
+        if "llama" in args.tokenizer_name_or_path.lower():
+            print("This is Llama")
+            outputs = model.generate(prompts, SamplingParams(temperature=args.temperature, top_p=1.0, max_tokens=10240, n=1, stop_token_ids=[128009]))
+        elif "qwen3" in args.tokenizer_name_or_path.lower():
+            print("This is qwen3")
+            outputs = model.generate(prompts, SamplingParams(temperature=args.temperature, top_p=1.0, max_tokens=10240, n=1, stop_token_ids=[151645, 151643]))
+        else:
+            outputs = model.generate(prompts, SamplingParams(temperature=args.temperature, top_p=1.0, max_tokens=10240, n=1))
         outputs = sorted(outputs, key=lambda x: int(x.request_id)) # sort outputs by request_id
         outputs = [output.outputs[0].text for output in outputs]
     else:
