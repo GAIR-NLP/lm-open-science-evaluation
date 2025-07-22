@@ -161,3 +161,17 @@ Contains detailed predictions and responses in the following format:
 - **`accuracy`**: Binary accuracy score (1.0 for correct, 0.0 for incorrect) for this specific sample
 
 This structured output format enables detailed analysis of model performance, error patterns, and facilitates further research and debugging.
+
+## 🥳 Citation
+
+If you find this work useful, please cite:
+
+```
+@article{fan2025megascience,
+  title={MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning},
+  author={Fan, Run-Ze and Wang, Zengzhi and Liu, Pengfei},
+  year={2025},
+  journal={arXiv preprint arXiv:xxx},
+  url={https://arxiv.org/abs/xxx}
+}
+```
