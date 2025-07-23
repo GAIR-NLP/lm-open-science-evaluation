@@ -6,7 +6,7 @@ The **Language Model Open Science Evaluation** is a comprehensive evaluation fra
 
 Our evaluation system supports reproducible experiments from the following research works:
 
-- **MegaScience**: Pushing the Frontiers of Post-Training Datasets for Science Reasoning ([Paper]())
+- **MegaScience**: Pushing the Frontiers of Post-Training Datasets for Science Reasoning ([arXiv: 2507.16812](https://arxiv.org/abs/2507.16812))
 - **OctoThinker**: Mid-training Incentivizes Reinforcement Learning Scaling ([arXiv:2506.20512](https://arxiv.org/abs/2506.20512))
 
 This codebase builds upon and incorporates valuable features from [DeepSeek-Math](https://github.com/deepseek-ai/DeepSeek-Math) by DeepSeek AI.
