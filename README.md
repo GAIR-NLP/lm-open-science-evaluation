@@ -111,6 +111,7 @@ Suppose you have 8 GPU nodes, with 8 GPU devices per node, and you plan to evalu
 
 <details>
 <summary>An Example Slurm Script</summary>
+
 ```
 #!/bin/bash
 #SBATCH --job-name=cpt_eval
@@ -192,6 +193,7 @@ python summarize_results.py \
     --dirname outputs/${ckpt_dir} \
     --summarize_dir perf_results/${ckpt_dir}
 ```
+
 </details>
 
 
