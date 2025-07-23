@@ -2,12 +2,22 @@
 
 ## Introduction
 
-The **Language Model Open Science Evaluation** is a comprehensive evaluation framework used internally within [GAIR](https://plms.ai/index.html) for evaluating scientific reasoning capabilities in both base and instruction-tuned LLMs. This repository provides the complete codebase to faithfully reproduce evaluation results from our research papers in mathematical and scientific reasoning.
+The **Language Model Open Science Evaluation** is a comprehensive evaluation framework originally developed for evaluating mathematical reasoning abilities of language models after continued pre-training. Initially focused on mathematics, it has since been expanded to cover multiple scientific disciplines and now supports evaluation of both base and instruction-tuned LLMs. Used internally within [GAIR](https://plms.ai/index.html), this repository provides the complete codebase to faithfully reproduce evaluation results from our recent research papers in mathematical and scientific reasoning.
 
 Our evaluation system supports reproducible experiments from the following research works:
 
-- **MegaScience**: Pushing the Frontiers of Post-Training Datasets for Science Reasoning ([arXiv: 2507.16812](https://arxiv.org/abs/2507.16812))
 - **OctoThinker**: Mid-training Incentivizes Reinforcement Learning Scaling ([arXiv:2506.20512](https://arxiv.org/abs/2506.20512))
+
+- **MegaScience**: Pushing the Frontiers of Post-Training Datasets for Science Reasoning ([arXiv:2507.16812](https://arxiv.org/abs/2507.16812))
+
+
+This evaluation system can also be applied to our previous pre-training research work:
+
+- Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale ([arXiv:2409.17115](https://arxiv.org/abs/2409.17115))
+
+Although, in that work, we used a different evaluation infrastructure: [GAIR-NLP/math-evaluation-harness](https://github.com/GAIR-NLP/math-evaluation-harness)
+
+
 
 This codebase builds upon and incorporates valuable features from [DeepSeek-Math](https://github.com/deepseek-ai/DeepSeek-Math) by DeepSeek AI.
 
@@ -84,17 +94,114 @@ The evaluation system will automatically process the configured benchmarks accor
 
 ## Specific Evaluation Suites
 
-### MegaScience Evaluations
 
-To reproduce the results in the [MegaScience paper]():
+### OctoThinker Evaluations (CPT Usage)
+
+
+Note that the your_model_folder_path should be like:
+
+
+```
+$ ls your_model_folder_path
+1B/  2B/  3B/  4B/  5B/  6B/  7B/  8B/  9B/ 10B/
+```
+
+Suppose you have 8 GPU nodes, with 8 GPU devices per node, and you plan to evaluate these checkpoints in parallel. In your SLURM or Kubernetes scripts, you will distribute the checkpoints across the 8 nodes. In other words, each node will be assigned a subset of checkpoint paths, such as one or two checkpoints per node.
+
+
+<details>
+<summary>An Example Slurm Script</summary>
+```
+#!/bin/bash
+#SBATCH --job-name=cpt_eval
+#SBATCH --output=logs/eval.%J.log
+#SBATCH --partition=xxx
+#SBATCH --error=logs/eval.%J.log
+#SBATCH --time=50:00:00
+#SBATCH --nodes=8
+#SBATCH --mem=0
+#SBATCH --ntasks-per-node=8
+#SBATCH --gres=gpu:8
+#SBATCH --exclusive
+
+cd lm-open-science-evaluation/
+source xxx/miniconda3/bin/activate
+conda activate matheval
+
+
+ckpt_dir=llama_3_2_1B_nanotron_cpt/megamath-web-pro/bs2_lr5e-5_seq8k_15B_dp256
+hf_ckpt_dir=your_storage_path/hf/${ckpt_dir}
+
+
+export NNODES=$SLURM_NNODES
+
+model_paths=()
+
+for path in $(ls ${hf_ckpt_dir}); do
+    model_paths+=(${hf_ckpt_dir}/${path})
+done
+length=${#model_paths[@]}
+export N_MODELS=$length
+export MODEL_PATHS=(${model_paths[@]})
+echo "model paths: ${MODEL_PATHS[@]}"
+
+
+
+# parallel eval all models on multi-nodes
+cmd='
+model_paths=("$@")  # Receive paths as command line arguments
+node_id=$SLURM_NODEID
+total_nodes=$SLURM_NNODES
+
+# if SLURM_NODEID >= N_MODELS, then exit
+if [ $node_id -ge $N_MODELS ]; then
+    total_nodes=$N_MODELS
+    exit 0
+fi
+
+# function to get the n-th model path for the current node
+get_path_for_node() {
+    local n=$1
+    echo ${model_paths[$((n * total_nodes + node_id))]}
+}
+
+# generate the list of model paths for the current node
+model_paths_for_node=()
+n=0
+while true; do
+    path=$(get_path_for_node $n)
+    echo "path: $path"
+    if [ -n "$path" ]; then
+        model_paths_for_node+=($path)
+    fi
+    n=$((n + 1))
+    if [ $((n * total_nodes + node_id + 1)) -ge $N_MODELS ]; then
+        break
+    fi
+done
+
+# verbose
+echo "model_paths_for_node: ${model_paths_for_node[@]}"
+bash scripts/en_math_cot_eval.sh ${model_paths_for_node[@]}
+'
+
+srun --ntasks=$NNODES --ntasks-per-node=1 bash -c "$cmd" -- "${MODEL_PATHS[@]}"
+
+cd lm-open-science-evaluation
+python summarize_results.py \
+    --dirname outputs/${ckpt_dir} \
+    --summarize_dir perf_results/${ckpt_dir}
+```
+</details>
+
+
+### MegaScience Evaluations (SFT Usage)
+
+To reproduce the results in the [MegaScience paper](https://arxiv.org/abs/2507.16812):
 
 ```bash
 bash scripts/eval_science.sh <model_path>
 ```
-
-### OctoThinker Evaluations
-
-
 
 
 ## Evaluation Output
@@ -167,20 +274,21 @@ This structured output format enables detailed analysis of model performance, er
 If you find this work useful, please cite:
 
 ```
+@article{wang2025octothinker,
+  title={OctoThinker: Mid-training Incentivizes Reinforcement Learning Scaling},
+  author={Wang, Zengzhi and Zhou, Fan and Li, Xuefeng and Liu, Pengfei},
+  year={2025},
+  journal={arXiv preprint arXiv:2506.20512},
+  url={https://arxiv.org/abs/2506.20512}
+}
+```
+
+```
 @article{fan2025megascience,
   title={MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning},
   author={Fan, Run-Ze and Wang, Zengzhi and Liu, Pengfei},
   year={2025},
   journal={arXiv preprint arXiv:2507.16812},
   url={https://arxiv.org/abs/2507.16812}
-}
-```
-```
-@article{wang2025octothinker,
-  title={OctoThinker: Mid-training Incentivizes Reinforcement Learning Scaling},
-  author={Wang, Zengzhi and Zhou, Fan and Li, Xuefeng and Liu, Pengfei},
-  year={2025},
-  journal={arXiv preprint arXiv:2506.20512},
-  note={Preprint}
 }
 ```
